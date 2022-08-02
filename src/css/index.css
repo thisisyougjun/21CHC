@@ -1,0 +1,15 @@
+
+#header{
+  height: 300px;
+}
+
+.title_logo{
+  float: left;
+}
+
+.title{
+  font-size: 35px;
+  line-height: 42px;
+}
+
+
