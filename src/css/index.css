@@ -1,6 +1,6 @@
 
 .container-fluid{
-  overflow: hidden;
+  width: 100%;
 }
 
 #header{
@@ -19,21 +19,56 @@
 
 #slide_cont{
   height: 750px;
-  width: 1920px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.slide_img{
-  height: 750px;
-  overflow: hidden;
+img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .cont{
   background-color: pink;
 }
 
-.footer{
+#nav{
   height: 68px;
+  width: 100%;
   font-size: 24px;
   line-height: 68px;
+}
+
+.footer_menu{
+  height: 68px;
+}
+
+.ContentsBox > div{
+  line-height: 50px;
+  font-size: 26px;
+  /*짤버전용*/
+  flex-direction: column;
+}
+.ContentsText{
+  display: inline-block;
+}
+
+.ContentsBox{
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  /*width: 100%;*/
+  /*height: 45%;*/
+  width: 300px;
+  height: 28%;
+  border: 1px solid black;
+
+
+  /* slide up Animation */
+  top: 100%;
+  transition: all .3s ease-out;
+
 }
 

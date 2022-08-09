@@ -18,8 +18,19 @@ $(".slide_img")[0].innerHTML=img0;
 $(".slide_img")[1].innerHTML=img1;
 $(".slide_img")[2].innerHTML=img2;
 
-//콘텐츠 메뉴 만들어야함
-function openNav(){
+$(".ContentsText").hover(function (){
+    $(".ContentsBox").css("top","72%"); //.ContentsBox 의 100 - height 값 넣으면 됨 // 짧은버전 - 72% , 긴버전 65%
+    },function (){
+     $(".ContentsBox").css("top","100%");
+ })
 
-}
+//콘텐츠 메뉴 만들어야함
+
+// $(".ContentsText").click(function (e){
+//         if ($(".ContentsBox").css("display")=="none"){
+//             $(".ContentsBox").show()
+//         }else if(!$(e.target).hasClass("ContentsBox")){
+//             $(".ContentsBox").hide()
+//         }
+// })
 
