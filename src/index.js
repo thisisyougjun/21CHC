@@ -18,19 +18,11 @@ $(".slide_img")[0].innerHTML=img0;
 $(".slide_img")[1].innerHTML=img1;
 $(".slide_img")[2].innerHTML=img2;
 
-$(".ContentsText").hover(function (){
-    $(".ContentsBox").css("top","72%"); //.ContentsBox 의 100 - height 값 넣으면 됨 // 짧은버전 - 72% , 긴버전 65%
-    },function (){
-     $(".ContentsBox").css("top","100%");
- })
+$(".ContentNav").on('click',function (){
+    if ($(".ContentsBox").css("top")=="1000px"){
+            $(".ContentsBox").stop().animate({top:550},'slow')
+    }else {
+        $(".ContentsBox").stop().animate({top:1000},)
 
-//콘텐츠 메뉴 만들어야함
-
-// $(".ContentsText").click(function (e){
-//         if ($(".ContentsBox").css("display")=="none"){
-//             $(".ContentsBox").show()
-//         }else if(!$(e.target).hasClass("ContentsBox")){
-//             $(".ContentsBox").hide()
-//         }
-// })
-
+    }
+});

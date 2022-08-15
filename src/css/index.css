@@ -1,6 +1,7 @@
 
 .container-fluid{
   width: 100%;
+  overflow: hidden;
 }
 
 #header{
@@ -15,6 +16,7 @@
 .title{
   font-size: 35px;
   line-height: 150px;
+  pointer-events: none;
 }
 
 #slide_cont{
@@ -41,9 +43,6 @@ img{
   line-height: 68px;
 }
 
-.footer_menu{
-  height: 68px;
-}
 
 .ContentsBox > div{
   line-height: 50px;
@@ -51,24 +50,37 @@ img{
   /*짤버전용*/
   flex-direction: column;
 }
-.ContentsText{
+/* 글자만큼만 길이설정*/
+/*.ContentNav{*/
+/*  display: inline-block;*/
+/*}*/
+
+.ContentsBox{
+  position: relative;
+  background-color: blueviolet;
+  width: 270px;
+  border: 1px solid black;
+  top: 1000px;
+  z-index: 2;
+}
+
+.ContentNav{
+  width: 35%;
+  overflow: paged-x;
+  height: 50px;
+}
+.ContentNav>p{
+  position: relative;
+  left: 20px;
   display: inline-block;
 }
 
-.ContentsBox{
-  position: absolute;
-  bottom: 0;
-  background-color: white;
-  /*width: 100%;*/
-  /*height: 45%;*/
-  width: 300px;
-  height: 28%;
-  border: 1px solid black;
-
-
-  /* slide up Animation */
-  top: 100%;
-  transition: all .3s ease-out;
-
+.active{
+  display: block;
+  bottom: 270px;
 }
 
+.account>p{
+  position: relative;
+  right: 20px;
+}
