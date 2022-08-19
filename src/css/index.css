@@ -4,16 +4,16 @@
   overflow: hidden;
 }
 
-#header{
+#index_header{
   height: 150px;
 }
 
-.title_logo{
+.index_title_logo{
   float: left;
   line-height: 150px;
 }
 
-.title{
+.index_title{
   font-size: 35px;
   line-height: 150px;
   pointer-events: none;
@@ -57,30 +57,50 @@ img{
 
 .ContentsBox{
   position: relative;
-  background-color: blueviolet;
+  background-color: white;
   width: 270px;
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
   top: 1000px;
   z-index: 2;
 }
 
 .ContentNav{
   width: 35%;
-  overflow: paged-x;
   height: 50px;
 }
 .ContentNav>p{
   position: relative;
   left: 20px;
   display: inline-block;
-}
-
-.active{
-  display: block;
-  bottom: 270px;
+  cursor: pointer;
 }
 
 .account>p{
   position: relative;
   right: 20px;
+}
+
+/*content_header.html*/
+
+.content_header{
+  width: 100%;
+  height: 80px;
+}
+
+.content_title_logo{
+  line-height: 80px;
+  margin-left: 30px;
+}
+
+.content_title{
+  line-height: 80px;
+}
+/*content_list.html*/
+
+.con1,.con2,.con3,.con4,.con5,.con6{
+  width: 359px;
+  height: 238px;
+  background-color: #040000;
+  margin: 11px;
 }

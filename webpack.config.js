@@ -10,8 +10,14 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, "dist"),
     },
+
     module: {
+
         rules: [
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
             {
                 test: /\.css$/,
                 //use: ["style-loader", "css-loader"],
@@ -49,8 +55,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-        template: './src/index.html',
-    }),
+            template: './src/index.html',
+        }),
         new MiniCssExtractPlugin({
             filename:"common.css",
         }),

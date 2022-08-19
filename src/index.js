@@ -26,3 +26,9 @@ $(".ContentNav").on('click',function (){
 
     }
 });
+
+$(".content01").click(function (){
+    console.log("123");
+    location.href="html/content_list.html";
+})
+
