@@ -148,8 +148,60 @@
 }
 /*detail.html*/
 .content_header{
-  width: 80%;
   height: 67px;
-  border: 1px solid black;
   margin: 0 auto;
 }
+
+.view_date{
+  width: 161px;
+}
+
+.title_text{
+  font-size: 32px;
+}
+
+.right_top{
+
+}
+
+.content_header>.row{
+  height: 100%;
+}
+
+.category_text{
+  font-size: 32px;
+}
+
+.item_text{
+  font-size: 18px;
+}
+
+.comment_wrapper{
+  height: 50px;
+}
+
+
+.text_area{
+  resize:none;
+  border:none;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  outline: none;
+  display: block;
+  border-radius: 0;
+  width: 100%;
+  height: 20px;
+  font-size: 17px;
+}
+
+.profile_img{
+  width: 41px;
+  height: 41px;
+  border-radius: 40px;
+  background-color: black;
+}
+
+.comment_time{
+  font-size: 8px;
+}
+

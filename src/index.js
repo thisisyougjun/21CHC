@@ -22,4 +22,3 @@ $(".content-box>.col").hover(function (){
     $(this).find(".content_info").css("display","none")
 })
 
-
