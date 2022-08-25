@@ -3,6 +3,7 @@
   height: 100vh;
 }
 
+
 #index_header{
   height: 150px;
 }
@@ -156,14 +157,6 @@
   width: 161px;
 }
 
-.title_text{
-  font-size: 32px;
-}
-
-.right_top{
-
-}
-
 .content_header>.row{
   height: 100%;
 }
@@ -181,6 +174,13 @@
 }
 
 
+.profile_img{
+  width: 41px;
+  height: 41px;
+  border-radius: 40px;
+  background-color: black;
+}
+
 .text_area{
   resize:none;
   border:none;
@@ -194,14 +194,72 @@
   font-size: 17px;
 }
 
-.profile_img{
-  width: 41px;
-  height: 41px;
-  border-radius: 40px;
-  background-color: black;
-}
-
 .comment_time{
   font-size: 8px;
 }
 
+.id_text{
+  font-size: 13px;
+}
+
+.footer_nav{
+  font-size: 24px;
+}
+
+/*login*/
+.content_center{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.title_text{
+  margin-top:50%;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.title_text2{
+  margin-top:40%;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.form-control{
+  border:none;
+  border-bottom: 1px solid black;
+  outline: none;
+  display: block;
+  border-radius: 0;
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  font-family: Pretendard Thin;
+  padding: 0;
+}
+
+.social_text{
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+}
+
+.input_form_label{
+  font-family: Pretendard Light;
+}
+
+.input_notice{
+  font-size: 12px;
+  color: red;
+}
+
+.form-check-input{
+  margin-bottom: 10px;
+}
+
+.login>span{
+  background-color: black;
+  color: white;
+}
+
+.signup_button{
+  background-color: black;
+  color: white;
+  height: 30px;
+}
