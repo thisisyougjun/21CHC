@@ -258,8 +258,18 @@
   color: white;
 }
 
-.signup_button{
+.email_agree{
+  font-family: Pretendard thin;
+  font-size: 14px;
+}
+
+.signup_agree{
+  font-family: Pretendard thin;
+  font-size: 14px;
+}
+
+.signup_button>span{
   background-color: black;
   color: white;
-  height: 30px;
+  height: 20px;
 }
