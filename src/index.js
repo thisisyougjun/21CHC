@@ -1,3 +1,4 @@
+$(document).ready(function() {
 $(".ContentNav").on('click',function (){
     console.log("asd")
     if ($(".Contents_Nav_box").css("top")=="1000px"){
@@ -8,7 +9,7 @@ $(".ContentNav").on('click',function (){
     }
 });
 
-$("#content_title_logo").on('click',function (){
+$("#content_title_logo>svg").on('click',function (){
     location.href='../index.html';
     console.log("asd")
 })
@@ -22,3 +23,18 @@ $(".content-box>.col").hover(function (){
     $(this).find(".content_info").css("display","none")
 })
 
+    $('#write_tool').summernote({
+        height:600,
+        toolbar:[
+            ['style', ['bold', 'italic', 'underline', 'clear','hr','']],
+            ['font', ['strikethrough', 'superscript', 'subscript']],
+            ['fontsize', ['fontsize']],
+            ['color', ['color','forecolor']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['height', ['height']],
+            ['insert',['picture','video','link']],
+            ['view', ['undo','redo']],
+        ],
+    });
+    $('.note-statusbar').hide();
+});

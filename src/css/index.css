@@ -122,6 +122,9 @@
 .content_title{
   line-height: 80px;
 }
+.content_title>span{
+  font-weight: 400;
+}
 /*content_list.html*/
 .content-box>.col{
   margin: 6px;
@@ -169,11 +172,6 @@
   font-size: 18px;
 }
 
-.comment_wrapper{
-  height: 50px;
-}
-
-
 .profile_img{
   width: 41px;
   height: 41px;
@@ -194,10 +192,6 @@
   font-size: 17px;
 }
 
-.comment_time{
-  font-size: 8px;
-}
-
 .id_text{
   font-size: 13px;
 }
@@ -216,13 +210,14 @@
   margin-top:50%;
   margin-bottom: 20px;
   font-size: 24px;
+
 }
 .title_text2{
   margin-top:40%;
   margin-bottom: 20px;
   font-size: 24px;
 }
-.form-control{
+.login-control{
   border:none;
   border-bottom: 1px solid black;
   outline: none;
@@ -273,3 +268,13 @@
   color: white;
   height: 20px;
 }
+
+.footer_wrapper{
+  height: 80px;
+}
+
+.category_nav{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
